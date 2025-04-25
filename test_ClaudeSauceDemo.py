@@ -4,7 +4,7 @@ from datetime import datetime
 from playwright.sync_api import Page, expect, Browser
 
 
-
+##new test by Jamil - IA##
 
 # Page Objects 
 class LoginPage:
@@ -216,7 +216,7 @@ def test_complete_purchase_with_multiple_items(login_page):
         inventory_page.add_item_to_cart(TestData.PRODUCTS["bolt_shirt"])
         inventory_page.add_item_to_cart(TestData.PRODUCTS["fleece_jacket"])
         screenshot.take_screenshot("items_added_to_cart")
-        
+        print("Items added to cart")
         # Complete checkout process
         cart_page = inventory_page.go_to_cart()
         screenshot.take_screenshot("cart_page")
