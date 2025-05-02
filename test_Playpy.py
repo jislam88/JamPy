@@ -5,7 +5,7 @@ from datetime import datetime
 from pathlib import Path
 from playwright.sync_api import Page, expect
 
-def test_TableSortSearch(page: Page) -> None:
+def test_tablesortsearch(page: Page) -> None:
     """Test table sorting and searching functionality"""
     page.goto("https://www.lambdatest.com/selenium-playground/")
     page.get_by_role("link", name="Table Sort & Search").click()
@@ -22,7 +22,7 @@ def test_TableSortSearch(page: Page) -> None:
     page.get_by_text("3", exact=True).click()
     expect(page.get_by_text("Showing 21 to 24 of 24 entries")).to_be_visible()
 
-def test_DownloadCSVFile(page: Page) -> None:
+def test_downloadfile(page: Page) -> None:
     """Test CSV file download functionality"""
     try:
         # Create downloads directory if it doesn't exist
@@ -31,8 +31,7 @@ def test_DownloadCSVFile(page: Page) -> None:
 
         # Navigate to the page
         page.goto("https://www.lambdatest.com/selenium-playground/")
-        page.get_by_role("link", name="Table Data Download").click()
-        
+        page.get_by_role("link", name="Table Data Download").click() 
         # Handle download with proper timestamp and path
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
         filename = f"TESTCSV_{timestamp}.csv"
@@ -41,10 +40,9 @@ def test_DownloadCSVFile(page: Page) -> None:
         # Wait for and handle download
         with page.expect_download() as download_info:
             page.get_by_role("link", name="CSV").click()
-        
+        # Wait for the download to complete
         download = download_info.value
         download.save_as(str(download_path))
-        
         # Verify download
         assert download_path.exists(), f"Download failed: {filename}"
         print(f"File downloaded successfully to: {download_path}")
@@ -59,7 +57,8 @@ def test_DownloadCSVFile(page: Page) -> None:
             page.close()
 
 
-def test_MultiSelect(page: Page) -> None:
+def test_multiselect(page: Page) -> None:
+    """Test multi-select dropdown functionality"""
     page.goto("https://www.lambdatest.com/selenium-playground/")
     page.get_by_role("link", name="Select Dropdown List").click()
     expect(page.get_by_role("heading", name="Dropdown Demo")).to_be_visible()
@@ -73,7 +72,8 @@ def test_MultiSelect(page: Page) -> None:
     page.close()
 
 
-def test_iFrame(page: Page) -> None:
+def test_iframe(page: Page) -> None:
+    """Test iframe functionality"""
     page.goto("https://www.lambdatest.com/selenium-playground/")
     page.get_by_role("link", name="iFrame Demo").click()
     expect(page.get_by_text("Simple iFrame containing Editor")).to_be_visible()

@@ -1,0 +1,8 @@
+Screenshot saved: screenshots\2025-05-02\form_validation_start_inventory_page_15-20-05.png
+Screenshot saved: screenshots\2025-05-02\form_validation_cart_page_15-20-05.png
+Screenshot saved: screenshots\2025-05-02\form_validation_checkout_info_page_15-20-05.png
+Screenshot saved: screenshots\2025-05-02\form_validation_validation_error_15-20-05.png
+Screenshot saved: screenshots\2025-05-02\form_validation_checkout_info_filled_15-20-06.png
+Screenshot saved: screenshots\2025-05-02\form_validation_checkout_overview_page_15-20-06.png
+Screenshot saved: screenshots\2025-05-02\form_validation_order_complete_15-20-06.png
+Screenshot saved: screenshots\2025-05-02\form_validation_back_to_products_15-20-06.png

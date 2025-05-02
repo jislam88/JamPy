@@ -1,0 +1,8 @@
+Screenshot saved: screenshots\2025-05-02\complete_purchase_after_login_15-20-51.png
+Screenshot saved: screenshots\2025-05-02\complete_purchase_items_added_to_cart_15-20-52.png
+Items added to cart
+Screenshot saved: screenshots\2025-05-02\complete_purchase_cart_page_15-20-52.png
+Screenshot saved: screenshots\2025-05-02\complete_purchase_checkout_info_page_15-20-52.png
+Screenshot saved: screenshots\2025-05-02\complete_purchase_checkout_overview_page_15-20-52.png
+Screenshot saved: screenshots\2025-05-02\complete_purchase_order_complete_15-20-52.png
+Screenshot saved: screenshots\2025-05-02\complete_purchase_back_to_products_15-20-52.png
